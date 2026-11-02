@@ -1,0 +1,16 @@
+{
+  "name": "openfetch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Check a public URL, its robots.txt, and an optional HTTP proxy before you fetch it.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Heorh Mykhailiuk <hmykhailiuk1007@gmail.com>",
+  "license": "MIT"
+}

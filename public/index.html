@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenFetch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>OpenFetch</h1>
+    <p>Check a public page before you scrape it. This reads robots.txt, fetches the page once, and can send that request through an HTTP proxy you already have. If a bot check gets in the way, the report says so and stops.</p>
+  </header>
+  <form id="form">
+    <label>URL
+      <input id="url" name="url" type="url" value="https://example.com" required>
+    </label>
+    <label>HTTP proxy, optional
+      <input id="proxy" name="proxy" type="text" placeholder="http://host:port" autocomplete="off">
+    </label>
+    <button type="submit">Check</button>
+  </form>
+  <p id="message"></p>
+  <section id="report" hidden></section>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
